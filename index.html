@@ -39,7 +39,9 @@
             align-items: center;
         }
 
-        .logo { font-weight: bold; font-size: 1.2rem; color: var(--primary); text-decoration: none; letter-spacing: 1px; }
+        /* Logo CSS güncellendi */
+        .logo { font-weight: bold; font-size: 1.2rem; color: var(--primary); text-decoration: none; letter-spacing: 1px; display: flex; align-items: center; gap: 10px; }
+        .logo img { height: 28px; width: auto; border-radius: 4px; } 
 
         nav ul { list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; }
 
@@ -63,7 +65,10 @@
 
         .card:hover { border-color: var(--primary); }
 
+        /* Voktrum Link CSS eklendi */
         .card h3 { margin-top: 0; font-size: 1.2rem; display: flex; align-items: center; justify-content: space-between; }
+        .card h3 a { color: inherit; text-decoration: none; transition: color 0.2s; }
+        .card h3 a:hover { color: var(--primary); }
 
         .badge {
             background: var(--badge-warning);
@@ -95,7 +100,11 @@
 <body>
 
     <nav>
-        <a href="#" class="logo">FluxyVista</a>
+        <a href="#" class="logo">
+            <!-- LOGO BURAYA EKLENDİ -->
+            <img src="logo.png" alt="FluxyVista Logo"> 
+            FluxyVista
+        </a>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -113,7 +122,8 @@
         <div class="project-grid">
             <!-- Voktrum App -->
             <div class="card">
-                <h3>Voktrum</h3>
+                <!-- VOKTRUM YAZISI LİNKE ÇEVRİLDİ -->
+                <h3><a href="https://play.google.com/store/apps/details?id=com.fluxyvista.voktrum" target="_blank">Voktrum</a></h3>
                 <p>A comprehensive vocabulary building and language learning application. Designed to help users expand their lexicon efficiently through a streamlined and interactive study approach.</p>
             </div>
             
